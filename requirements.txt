@@ -1,6 +1,7 @@
 dj-database-url==0.3.0 -e git+https://github.com/nwcell/psycopg2-windows.git@win64-py34#egg=psycopg2
-Django==1.9.1
+Django==1.9.0
 django-postgrespool==0.3.0
 psycopg2==2.6.1
 whitenoise==1.0.6
 djangorestframework==3.3.1
+django-pipeline==1.5.0

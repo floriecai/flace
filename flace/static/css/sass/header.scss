@@ -1,0 +1,11 @@
+@import 'common_mixins';
+
+h1 {
+	@include flex-display();
+	@include justify-content(center);
+}
+
+.header {
+	@include flex-display();
+	@include justify-content(center);
+}
