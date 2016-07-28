@@ -1,4 +1,8 @@
+#Personal folders
 venv/
+node_modules/
+sass-cache/
+assets/
 settings.py
 *.pyc
 

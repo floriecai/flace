@@ -1,0 +1,42 @@
+@import "common_mixins.scss";
+@import "common_variables.scss";
+
+.bio-container {
+	margin-top: 10px;
+	height:700px;
+
+	.bio-img-container {
+		@include flex-display();
+		width: $row-item-width;
+
+		.bio-img {
+			height: 200px;
+			margin-left: auto;
+			margin-right: auto;		
+		}
+	}
+
+	.row {
+		@include justify-content(space-around);
+		@include align-items(center);
+		min-height: 100px;
+
+		.item {
+			width: $row-item-width;
+			text-align: center;
+			font-size: 30px;
+		}
+
+		.header {
+			font-size: 40px;
+			font-weight: bold;
+			color: $turqoise;
+			width: calc(#{$row-item-width} + 50px);
+			text-align: center;
+		}
+	}
+
+	.description {
+		padding: 50px;
+	}
+}

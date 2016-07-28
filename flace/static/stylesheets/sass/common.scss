@@ -1,0 +1,52 @@
+@import "common_mixins.scss";
+@import "common_variables.scss";
+
+html, body {
+	margin: 0px !important;
+	padding: 0px !important;
+	font-family: $default-font;
+}
+
+.header-container {
+	.title-container {
+		@include flex-display();
+		@include justify-content(center);
+		@include align-items(center);
+	}
+
+	.nav-bar {
+		@include flex-display();
+		@include justify-content(center);
+
+		font-weight: bold;
+		color: $yellow;
+		background-color: $turqoise;
+
+		a {
+			color: $yellow;
+			text-decoration: none;
+		}
+	}
+} 
+
+.title {
+	font-family: $header-font;
+	font-size: 60px;
+	color: $turqoise;
+	padding: 20px 0;
+}
+
+.icon {
+	width: 50px;
+	height: auto;
+}
+
+h1 {
+	text-align: center;
+	font-size: 50px;
+	width: 400px;
+}
+
+.row {
+	@include flex-display();
+}

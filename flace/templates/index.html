@@ -1,0 +1,40 @@
+{% load pipeline %}
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="utf-8">
+   <title>Flace</title>
+   <!--styles-->
+   <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Josefin+Slab: 400, 700|Abril+Fatface|Lato|Open+Sans|Roboto|Montserrat|Arimo">
+   <link rel="stylesheet" type="text/css" href="{% static 'libs/font-awesome/css/font-awesome.min.css' %}">
+   <link rel="stylesheet" type="text/css" href="{% static 'stylesheets/css/common.css' %}">
+   {% stylesheet 'flace' %}
+</head>
+<body>
+    <!-- javascript scripts -->
+    <script src="{% static 'libs/jquery/dist/jquery.min.js' %}"></script>
+    <script src="{% static 'js/homepage.js'%}"></script>
+
+    {% javascript 'flace'%}
+    <div class="header-container">
+        <div class="photo-container">
+            <img src="{% static 'img/temp2.jpg' %}" alt="Photo header" width="100%">
+        </div>
+        <div class="title-container">
+            <img class="icon" src="{% static 'img/honey-icon.png' %}" alt="honey-icon">
+            <span class="title"> We're Flace!</span>
+            <img class="icon" src="{% static 'img/moon-icon.png' %}" alt="moon-icon">
+        </div>
+        <div class="nav-bar">
+            <ul> <a href="{% url 'about' %}">about</a> </ul> 
+            <ul> <a href="{% url 'trips' %}">trips</a> </ul> 
+            <ul> <a href="{% url 'where-are-we-now' %}">where are we now </a> </ul> 
+            <ul> <a href="{% url 'recommendations' %}"> recommendations </a> </ul>
+            <ul> cool stuff </ul>
+        </div>
+    </div>
+
+    <div class="content-container"> {% block content %}{% endblock %} </div>
+</body>
+</html>
