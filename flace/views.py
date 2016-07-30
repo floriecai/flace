@@ -1,4 +1,5 @@
 from django.http import HttpResponse
+<<<<<<< HEAD
 from django.template import loader
 from django.views.decorators.csrf import csrf_exempt
 from rest_framework.renderers import JSONRenderer
@@ -63,3 +64,10 @@ class JSONResponse(HttpResponse):
 
 		# 	return post
 		return null
+=======
+from django.template import loader, Context
+
+def homepage(self):
+	template = loader.get_template('header.html')
+	return HttpResponse(template.render())
+>>>>>>> 2cc000f0164f1eab9991c4a6d9f7b8ff40e42cb1

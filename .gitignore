@@ -1,7 +1,6 @@
 #Personal folders
 venv/
 node_modules/
-sass-cache/
 .sass-cache/
 assets/
 settings.py

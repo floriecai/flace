@@ -1,0 +1,35 @@
+/* line 4, ../sass/header.scss */
+body {
+  margin: 0;
+  background-color: #26A69A;
+}
+
+/* line 9, ../sass/header.scss */
+h1, .header {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  -moz-justify-content: center;
+  justify-content: center;
+}
+
+/* line 14, ../sass/header.scss */
+h1 {
+  font-family: 'Abril Fatface';
+  font-size: 50;
+  color: #26A69A;
+  background-color: #FFCA28;
+  padding: 20px 0 20px 0;
+}
+
+/* line 22, ../sass/header.scss */
+.header {
+  font-family: 'Josefin Slab';
+  font-weight: bold;
+  color: #FFCA28;
+}
