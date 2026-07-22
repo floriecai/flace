@@ -1,5 +1,5 @@
 {
-  "apiVersion": "dashboard.grafana.app/v2beta1",
+  "apiVersion": "dashboard.grafana.app/v2",
   "kind": "Dashboard",
   "metadata": {
     "name": "dffn61e4no5on4d"
@@ -27,7 +27,6 @@
       }
     ],
     "cursorSync": "Off",
-    "description": "",
     "editable": true,
     "elements": {
       "panel-1": {
@@ -43,15 +42,13 @@
                     "hidden": false,
                     "query": {
                       "datasource": {
-                        "name": "demo-prometheus"
+                        "name": "PD8C576611E62080A"
                       },
-                      "group": "prometheus",
+                      "group": "grafana-testdata-datasource",
                       "kind": "DataQuery",
                       "spec": {
-                        "editorMode": "builder",
-                        "expr": "alertmanager_alerts{instance=\"demo.prometheus.io:9093\"}",
-                        "legendFormat": "__auto",
-                        "range": true
+                        "scenarioId": "random_walk",
+                        "seriesCount": 1
                       },
                       "version": "v0"
                     },
@@ -134,8 +131,10 @@
                 "legend": {
                   "calcs": [],
                   "displayMode": "list",
+                  "enableFacetedFilter": false,
+                  "overflow": "ellipsis",
                   "placement": "bottom",
-                  "showLegend": true
+                  "showLegend": false
                 },
                 "tooltip": {
                   "hideZeros": false,
@@ -144,7 +143,7 @@
                 }
               }
             },
-            "version": "13.1.0-local"
+            "version": "9.2.0"
           }
         }
       }
